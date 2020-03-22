@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="#前言2019年最火的洋垃圾LG V30，骁龙835cpu（从此告别发烧），4G内存，64G储存，能满足日用生活，能玩游戏，2k屏幕，hifi，极高的性价比。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LG V30韩版 ROOT详细教程">
+<meta property="og:url" content="http://yoursite.com/archives/18.html">
+<meta property="og:site_name" content="外贸8教程网">
+<meta property="og:description" content="#前言2019年最火的洋垃圾LG V30，骁龙835cpu（从此告别发烧），4G内存，64G储存，能满足日用生活，能玩游戏，2k屏幕，hifi，极高的性价比。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223193123.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223132526.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223132704.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223132846.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223132942.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223133059.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223133708.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223134217.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223134343.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223160120.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223160511.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223160704.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223161325.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223161714.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223161820.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223162004.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223162654.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223162928.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223163401.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223163523.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223163954.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223164216.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223164329.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223164450.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223174444.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223133708.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223175719.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223185115.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223185236.png">
+<meta property="article:published_time" content="2019-12-24T04:10:32.000Z">
+<meta property="article:modified_time" content="2020-03-18T15:49:46.792Z">
+<meta property="article:author" content="外贸8 微信：16675999163">
+<meta property="article:tag" content="安卓手机">
+<meta property="article:tag" content="LG V30">
+<meta property="article:tag" content="刷机">
+<meta property="article:tag" content="root">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223193123.png">
+
+<link rel="canonical" href="http://yoursite.com/archives/18.html">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>LG V30韩版 ROOT详细教程 | 外贸8教程网</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta custom-logo">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">外贸8教程网</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">用hexo博客来记录自己的一些教程</p>
+      <a>
+        <img class="custom-logo-image" src="/uploads/custom-logo.jpg" alt="外贸8教程网">
+      </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="search-pop-overlay">
+  <div class="popup search-popup">
+      <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+  </div>
+</div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+  <a href="https://github.com/ch0769" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/archives/18.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="外贸8 微信：16675999163">
+      <meta itemprop="description" content="外贸鞋批发,一手货源,价格优势明显,喜欢的朋友可以加我微信">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="外贸8教程网">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          LG V30韩版 ROOT详细教程
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-12-23 20:10:32" itemprop="dateCreated datePublished" datetime="2019-12-23T20:10:32-08:00">2019-12-23</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-03-18 08:49:46" itemprop="dateModified" datetime="2020-03-18T08:49:46-07:00">2020-03-18</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA/" itemprop="url" rel="index"><span itemprop="name">安卓手机</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA/LG-V30/" itemprop="url" rel="index"><span itemprop="name">LG V30</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA/LG-V30/%E5%88%B7%E6%9C%BA/" itemprop="url" rel="index"><span itemprop="name">刷机</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA/LG-V30/%E5%88%B7%E6%9C%BA/root/" itemprop="url" rel="index"><span itemprop="name">root</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/archives/18.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/archives/18.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>3.1k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>3 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>#前言<br>2019年最火的洋垃圾LG V30，骁龙835cpu（从此告别发烧），4G内存，64G储存，能满足日用生活，能玩游戏，2k屏幕，hifi，极高的性价比。</p>
+<a id="more"></a>
+<h1 id="LG-V30韩版-ROOT详细教程"><a href="#LG-V30韩版-ROOT详细教程" class="headerlink" title="LG V30韩版 ROOT详细教程"></a>LG V30韩版 ROOT详细教程</h1><p>一个非常详细的视频教程，建议大家仔细观看，全部看懂了再来操作<br><a href="https://www.bilibili.com/video/av47071667" target="_blank" rel="noopener">https://www.bilibili.com/video/av47071667</a><br>看视频刷机比较麻烦，我把视频整理成图文版的，包括命令这些，方便机友们刷机<br>需要的工具视频下面的评论里面都有的，大家可以先去下载</p>
+<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><h2 id="安装LG官方驱动"><a href="#安装LG官方驱动" class="headerlink" title="安装LG官方驱动"></a>安装LG官方驱动</h2><h2 id="安装LGUP刷机工具"><a href="#安装LGUP刷机工具" class="headerlink" title="安装LGUP刷机工具"></a>安装LGUP刷机工具</h2><p>把下载的modle和LGUP覆盖到安卓目录</p>
+<h2 id="安装谷歌驱动"><a href="#安装谷歌驱动" class="headerlink" title="安装谷歌驱动"></a>安装谷歌驱动</h2><p>首先下载并打开此ADB工具箱<a href="http://pan.baidu.com/s/1nuHwTcP" target="_blank" rel="noopener">http://pan.baidu.com/s/1nuHwTcP</a><br>在弹出的窗口中输入y并按回车，依次重复操作3 次</p>
+<p><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223193123.png" alt=""></p>
+<h1 id="混刷-h930的kdz"><a href="#混刷-h930的kdz" class="headerlink" title="混刷 h930的kdz"></a>混刷 h930的kdz</h1><p>手机拔掉sim卡，断开wifi，退出google账户，设置，常规，关于手机，软件信息，连续点击内部版本号开启开发人员选项。<br>进入开发人员选项，点击启用OEM解锁，和USB调试，手机关机。关机后，按住音量+，插入已经连接电脑的USB线，手机会进入download 刷机模式<br>右键点击LGUP软件，选择以管理员身份运行，</p>
+<p> <img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223132526.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223132704.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223132846.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223132942.png" alt=""></p>
+<p>刷完之后会卡LOGO</p>
+<p><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223133059.png" alt=""></p>
+<p>按住音量减和电源键 8秒以上，会闪屏一下，当LOGO出现后，立刻松开，再重新按住关机键，直到出现data peset界面，才松开。用音量键选择YES，按电源键 进入恢复出厂设置</p>
+<p><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223133708.png" alt=""></p>
+<p>开始硬格手机，格式完毕后，就可以进入系统，手机开机没有基带的，不能使用SIM卡，</p>
+<h1 id="解锁BootLoader"><a href="#解锁BootLoader" class="headerlink" title="解锁BootLoader"></a>解锁BootLoader</h1><p>按照前面的教程打开设置进入开发者模式，启用OEM解锁，和USB调试，usb调成照片传输模式</p>
+<p><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223134217.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223134343.png" alt=""></p>
+<p>LG V30工具包里有命令的，我还是把命令贴这里，方便一些<br>输入命令<br>adb devices<br>勾选手机始终运行在此计算机上进行操作，点确定<br><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223160120.png" alt=""></p>
+<p>adb reboot bootloader<br>—–进入了fastboot—–<br>fastboot flash unlock unlock.bin</p>
+<p><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223160511.png" alt=""></p>
+<p>fastboot reboot<br>—–解锁了BL并重启了手机—–<br><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223160704.png" alt=""></p>
+<p>手机开机后，按照前面的教程打开设置进入开发者模式，启用OEM解锁，和USB调试，usb调成照片传输模式</p>
+<p>输入<br>adb devices<br>adb reboot bootloader<br>fastboot getvar unlocked<br>出现 yes  就是解锁成功了。<br><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223161325.png" alt=""></p>
+<p>—-进入fastboot以查看是否解锁—–</p>
+<h1 id="root，备份欧版recovery"><a href="#root，备份欧版recovery" class="headerlink" title="root，备份欧版recovery"></a>root，备份欧版recovery</h1><p>fastboot boot TWRP.img<br>临时进入twrp，可以手机操作切换到中文<br>格式化分区<br><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223161714.png" alt=""><br>会出现红字 不用理</p>
+<p><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223161820.png" alt=""></p>
+<p>再清除 cache</p>
+<p><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223162004.png" alt=""><br>也会出现红字，点击返回，点击重启bootloader</p>
+<p>fastboot boot TWRP.img<br>再次进入twrp，电脑上可以显示手机存储了。把拷贝内存文件夹里面的三个文件复制粘贴到手机里面<br>依次刷入这三个文件，顺序不能乱，这次刷入没有出现红字。<br><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223162654.png" alt=""></p>
+<p>接着备份欧版官方的recocery</p>
+<p><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223162928.png" alt=""></p>
+<p>备份好后，复制到电脑，重启手机到bootloader<br>输入<br>fastboot flash recovery TWRP.img<br>再次输入<br>fastboot boot TWRP.img<br>电脑上就可以看到手机储存了</p>
+<p><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223163401.png" alt=""><br><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223163523.png" alt=""></p>
+<p>把里面的twrp文件夹复制到电脑，然后手机关机</p>
+<h1 id="刷回韩版系统"><a href="#刷回韩版系统" class="headerlink" title="刷回韩版系统"></a>刷回韩版系统</h1><p>关机状态下，按住音量加 插入USB，就会进入刷机模式<br>右键点击LGUP，以管理员身份运行。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223163954.png" alt=""></p>
+<p>刷韩版的kdz系统<br><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223164216.png" alt=""></p>
+<p>选分区的时候排除recovery，recoverybak两个分区，也就是不刷入官方recovery，因为韩版系统即使解锁bootloader也无法进入fastboot，也就无法刷入TWRP</p>
+<p><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223164329.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223164450.png" alt=""></p>
+<p>刷完，一般会进入TWRP，如果没有进去，就要从 混刷 h930的kdz 开始重新刷</p>
+<p>刷完韩版系统，进入TWRP后<br>格式化data，再清除 cache，依次刷入<br>1_Magisk-v16.0<br>2_no-verity-opt-encrypt-6.0<br>3_lg-rctd-disabler-1.0(1)adb shell<br>刷完后把之前备份复制到电脑的欧版recocery，（带备份日期和时间的这个文件夹）复制到手机，从TWRP恢复。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223174444.png" alt=""></p>
+<p>恢复之后关机再开机，一般可以正常进系统，如果等10分钟还不能开机，就要重新执行工厂格式化开机</p>
+<p>按住音量减和电源键 8秒以上，会闪屏一下，当LOGO出现后，立刻松开，再重新按住关机键，直到出现data peset界面，才松开。用音量键选择YES，按电源键 进入恢复出厂设置<br>按照前面的教程，并引用了之前的图片<br><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223133708.png" alt=""></p>
+<p>开始硬格手机，格式完毕后，就可以进入系统<br>现在的系统状态是已解锁BL锁，有root权限<br>把TWEP.img文件复制到手机储存<br>打开开发者模式，开启adb调试<br>输入下面的命令<br>adb shell<br>su</p>
+<p><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223175719.png" alt=""></p>
+<p>手机点允许</p>
+<p>dd if=/sdcard/TWRP.img of=/dev/block/bootdevice/by-name/recovery</p>
+<h1 id="教程补充"><a href="#教程补充" class="headerlink" title="教程补充"></a>教程补充</h1><p>刷机前可以先备份基带再刷机</p>
+<p>手机进入刷机模式（完全关机按住音量+插入数据线连接电脑）</p>
+<p>右键管理员打开桌面“LG UP”。</p>
+<p>先备份基带（备份xbl xbl2 modem分区） （机锋论坛浪大教程）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223185115.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20191223185236.png" alt=""></p>
+<p>以后要升级系统，可以从刷回韩版教程开始刷</p>
+<p>在ADB和Fastboot工具的文件夹中，按住shift并右击空白处，选择“在此处打开Powershell窗口”（旧版Windows为命令提示符）<br>界面不同，但命令无区别）,进入命令行窗口。</p>
+<h1 id="机锋精品教程"><a href="#机锋精品教程" class="headerlink" title="机锋精品教程"></a>机锋精品教程</h1><p> LG V30韩版解锁Bootloader+TWRP+韩版系统+root详细教程&amp;资源  （非常详细的刷机教程）<br> <a href="http://bbs.gfan.com/android-9493762-1-4.html" target="_blank" rel="noopener">http://bbs.gfan.com/android-9493762-1-4.html</a></p>
+<p>LG V30官方KDZ混刷教程<br><a href="http://bbs.gfan.com/android-9313407-1-1.html" target="_blank" rel="noopener">http://bbs.gfan.com/android-9313407-1-1.html</a></p>
+<p> LG V30解BL 安装TWRP及root详细教程<br> ttp://bbs.gfan.com/android-9313266-1-1.html</p>
+<p>韩版刷机说明..防砖.刷第三方<br><a href="http://bbs.gfan.com/android-9561523-1-1.html" target="_blank" rel="noopener">http://bbs.gfan.com/android-9561523-1-1.html</a></p>
+<p> 韩版v300l，解锁+root+原生系统教程之五大步（补充）<br> <a href="http://bbs.gfan.com/android-9506755-1-1.html" target="_blank" rel="noopener">http://bbs.gfan.com/android-9506755-1-1.html</a></p>
+<p>LG V30目前可以通刷的版本说明<br><a href="http://bbs.gfan.com/android-9310017-1-3.html" target="_blank" rel="noopener">http://bbs.gfan.com/android-9310017-1-3.html</a></p>
+<p>【PIE+Volte】韩版移动电信成功开启Volte更新详细教程<br><a href="http://bbs.gfan.com/android-9618911-1-3.html" target="_blank" rel="noopener">http://bbs.gfan.com/android-9618911-1-3.html</a></p>
+<p>韩版用户折腾经验分享<br><a href="http://bbs.gfan.com/android-9492238-1-6.html" target="_blank" rel="noopener">http://bbs.gfan.com/android-9492238-1-6.html</a></p>
+<p>俄罗斯论坛LG V30刷机固件下载<br><a href="http://4pda.ru/forum/index.php?showtopic=902834" target="_blank" rel="noopener">http://4pda.ru/forum/index.php?showtopic=902834</a></p>
+<p>看下载量 Dot OS 这个不错 也是官方的，比较稳定，其他rom应该也不错的。<br>8.1<br><a href="https://forum.xda-developers.com/lg-v30/development/rom-dotos-v2-2-t37984419.0" target="_blank" rel="noopener">https://forum.xda-developers.com/lg-v30/development/rom-dotos-v2-2-t37984419.0</a></p>
+<p>9.0<br><a href="https://forum.xda-developers.com/lg-v30/development/rom-pie-dot-os-3-0-t3908490" target="_blank" rel="noopener">https://forum.xda-developers.com/lg-v30/development/rom-pie-dot-os-3-0-t3908490</a></p>
+<p>LG-US998 20D ROM 常用底包 里面有解锁的相关链接<br><a href="https://forum.xda-developers.com/lg-v30/development/rom-lg-us998-20d-rom-t3830318" target="_blank" rel="noopener">https://forum.xda-developers.com/lg-v30/development/rom-lg-us998-20d-rom-t3830318</a></p>
+
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>外贸8 微信：16675999163
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://yoursite.com/archives/18.html" title="LG V30韩版 ROOT详细教程">http://yoursite.com/archives/18.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA/" rel="tag"># 安卓手机</a>
+              <a href="/tags/LG-V30/" rel="tag"># LG V30</a>
+              <a href="/tags/%E5%88%B7%E6%9C%BA/" rel="tag"># 刷机</a>
+              <a href="/tags/root/" rel="tag"># root</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/archives/17.html" rel="prev" title="解决安卓手机卡顿 安装google商店官方软件的方法">
+      <i class="fa fa-chevron-left"></i> 解决安卓手机卡顿 安装google商店官方软件的方法
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/archives/19.html" rel="next" title="关于微店购物的相关问题">
+      关于微店购物的相关问题 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#LG-V30韩版-ROOT详细教程"><span class="nav-number">1.</span> <span class="nav-text">LG V30韩版 ROOT详细教程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#准备工作"><span class="nav-number">2.</span> <span class="nav-text">准备工作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装LG官方驱动"><span class="nav-number">2.1.</span> <span class="nav-text">安装LG官方驱动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装LGUP刷机工具"><span class="nav-number">2.2.</span> <span class="nav-text">安装LGUP刷机工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装谷歌驱动"><span class="nav-number">2.3.</span> <span class="nav-text">安装谷歌驱动</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#混刷-h930的kdz"><span class="nav-number">3.</span> <span class="nav-text">混刷 h930的kdz</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解锁BootLoader"><span class="nav-number">4.</span> <span class="nav-text">解锁BootLoader</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#root，备份欧版recovery"><span class="nav-number">5.</span> <span class="nav-text">root，备份欧版recovery</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#刷回韩版系统"><span class="nav-number">6.</span> <span class="nav-text">刷回韩版系统</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#教程补充"><span class="nav-number">7.</span> <span class="nav-text">教程补充</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#机锋精品教程"><span class="nav-number">8.</span> <span class="nav-text">机锋精品教程</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">外贸8 微信：16675999163</p>
+  <div class="site-description" itemprop="description">外贸鞋批发,一手货源,价格优势明显,喜欢的朋友可以加我微信</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">20</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">43</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">51</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i>RSS</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-link"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://www.baidu.com/" title="http:&#x2F;&#x2F;www.baidu.com" rel="noopener" target="_blank">baidu</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2015 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">外贸8 微信：16675999163</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    <span title="站点总字数">29k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">26 分钟</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.7.2
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'n4yQtY9wvU9S7oST2BuJJmjS-MdYXbMMI',
+      appKey     : 'AomcGRC8fmQljq9unuR0iHbV',
+      placeholder: "Just go go",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>
